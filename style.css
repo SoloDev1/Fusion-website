@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Login */
+
+@font-face {
+  font-family: "Poppins";
+  src: url(font/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "subhead";
+  src: url(font/Poppins/Poppins-Regular.ttf);
+}
+.login-heading {
+  font-family: Poppins;
+  font-size: 2.4rem;
+}
+
+.login-subhead {
+  font-family: subhead;
+  font-size: 1.4rem;
+}
+
+.login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.login-img-wrapper {
+  background-color: rgb(0, 0, 0);
+}
+
+.login-img-wrapper:hover {
+  background-color: rgb(36, 36, 36);
+}
+
+.login-img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
+
+.heading {
+  justify-content: center;
+  text-align: center;
+
+  margin-top: 50px;
+}
+
+.heading h3,
+.heading p {
+  margin: 10px;
+}
+
+.login-wrapper {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-items: center;
+  font-family: subhead;
+  align-content: flex-start;
+}
+
+.login-form {
+  font-size: 1.2rem;
+  margin-top: 30px;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+
+  justify-content: center;
+  align-content: center;
+}
+
+.login-form input {
+  width: 400px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(175, 175, 175, 0.645);
+  outline: 0;
+  margin-bottom: 40px;
+}
+
+.login-con {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-con a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+a.forgot-pswd {
+  color: #006dff;
+}
+
+.login-form label {
+  margin: 5px 0;
+}
+
+.login-btn {
+  font-family: subhead;
+  padding: 10px;
+  border: none;
+  background-color: #000000;
+  margin: 10px 0;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1120px) {
+  .login {
+    grid-template-columns: 40% 60%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .login {
+    grid-template-columns: 45% 55%;
+  }
+
+  .login-form input {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .login {
+    grid-template-columns: 50% 50%;
+  }
+
+  .login-form input {
+    width: 300px;
+  }
+}
